@@ -1,0 +1,178 @@
+html
+body
+  font-family: 'DINRoundPro', serif
+  font-size: 18px
+  box-sizing: border-box
+  position: relative
+.out
+  overflow-x: hidden
+.container
+  width: 100% !important
+  max-width: 1110px
+  box-sizing: border-box
+  +r(1140)
+    padding: 0 15px
+a
+  text-decoration: none
+  transition: all 0.3s
+.flex
+  display: flex
+
+.heading
+  margin-bottom: 50px
+  +r(767)
+    margin-bottom: 30px
+  h2
+    font-size: 40px
+    font-weight: bold
+    letter-spacing: 0.3px
+    text-align: center
+    color: $bright-sky-blue-two
+    +r(767)
+      font-size: 24px
+
+
+.btn
+  height: 60px
+  width: 255px
+  +center
+  display: inline-flex
+  font-size: 18px
+  font-weight: bold
+  letter-spacing: 0.3px
+  line-height: 1
+  color: $white
+  border-radius: 100px
+  text-transform: uppercase
+  font-family: 'DINRoundPro'
+  &-primary
+    background-color: $seafoam-blue
+  &-secondary
+    padding: 20px 0
+    border: 2px solid $bright-sky-blue-two
+    color: $bright-sky-blue-two
+  &-blue
+    padding: 20px 0
+    border: 2px solid $bright-sky-blue-two
+    color: $white
+    background: $bright-sky-blue-two
+  &-white
+    background-color: transparent
+    border: 2px solid $white
+  &-pink
+    border: 2px solid $pink
+    color: $white
+    background: $pink
+
+
+
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+	.hidden-sm
+		display: none !important
++rmin(1024)
+	.hidden-md
+		display: none !important
+
+
+
+h1
+  font-size: 40px
+  font-weight: bold
+  text-align: center
+  color: $bright-sky-blue-two
+  +r(767)
+    font-size: 24px
+
+
+.breadcrumbs
+  background: #f8f8f8
+  height: 80px
+  .container
+    height: 100%
+  ul
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    height: 100%
+  li
+    a
+      font-size: 18px
+      color: $bright-sky-blue-two
+      padding-right: 15px
+      i
+        font-size: 16px
+        position: relative
+        right: -7px
+    &:last-child
+      i
+        display: none
+    &:first-child
+      text-transform: uppercase
+      a
+        font-weight: bold
+        line-height: 1
+      i
+        font-weight: 900
+
+.team__block
+  background: #e8fff4
+  border-radius: 30px
+  padding: 45px 40px
+  +tr
+  margin-right: 15px
+  width: calc(100% - 15px)
+  margin-bottom: 30px
+  +center-column
+  +r(1024)
+    width: 100%
+    margin-right: 0
+  &:hover
+    background: $seafoam-blue
+    h3, p, a
+      color: $white
+    a
+      border: 2px solid $white
+  &__img
+    overflow: hidden
+    width: 200px
+    height: 200px
+    border-radius: 100%
+  h3
+    font-family: 'DINRoundPro-Medi'
+    font-size: 24px
+    text-align: center
+    color: $black
+    margin-top: 50px
+    +tr
+  p
+    font-size: 18px
+    text-align: center
+    color: rgba(0, 0, 0, 0.41)
+    margin-top: 15px
+    margin-bottom: 60px
+    +tr
+  a
+    width: 100%
+    padding: 0
+    border: 2px solid $seafoam-blue
+
+
+
+.pages
+  padding-top: 35px
+  ul
+    +center-column
+    margin: 50px 0
+    li
+      margin-bottom: 10px
+      a
+        font-family: 'DINRoundPro-Medi'
+        font-size: 18px
+        text-align: center
+        color: $bright-sky-blue-two
+        +tr
+        &:hover
+          color: $black
