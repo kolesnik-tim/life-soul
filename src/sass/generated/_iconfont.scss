@@ -11,9 +11,9 @@
 
 $icon-down-arrow: "\EA01";
 $icon-fb: "\EA02";
-$icon-instagram: "\EA03";
-$icon-left-arrow: "\EA04";
-$icon-ok: "\EA05";
+$icon-i: "\EA03";
+$icon-instagram: "\EA04";
+$icon-left-arrow: "\EA05";
 $icon-play: "\EA06";
 $icon-right-arrow: "\EA07";
 $icon-vk: "\EA08";
@@ -37,9 +37,9 @@ $icon-vk: "\EA08";
 
 .icon-down-arrow:before { content: $icon-down-arrow; }
 .icon-fb:before { content: $icon-fb; }
+.icon-i:before { content: $icon-i; }
 .icon-instagram:before { content: $icon-instagram; }
 .icon-left-arrow:before { content: $icon-left-arrow; }
-.icon-ok:before { content: $icon-ok; }
 .icon-play:before { content: $icon-play; }
 .icon-right-arrow:before { content: $icon-right-arrow; }
 .icon-vk:before { content: $icon-vk; }

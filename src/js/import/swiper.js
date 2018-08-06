@@ -2,16 +2,12 @@ import Swiper from 'swiper';
 
 
 //home-shares
-var swiper = new Swiper('.swiper-shares', {
-  slidesPerView: 2,
-  spaceBetween: 30,
+var swiper = new Swiper('.swiper-intro', {
+  slidesPerView: 1,
+  spaceBetween: 0,
   navigation: {
-    nextEl: '.swiper-shares-next',
-    prevEl: '.swiper-shares-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination-shares',
-    clickable: true,
+    nextEl: '.swiper-intro-next',
+    prevEl: '.swiper-intro-prev',
   },
   breakpoints: {
     1024: {

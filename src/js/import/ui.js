@@ -15,5 +15,16 @@ $('.menu-open').on('click', function() {
 //select
 $('select').selectize();
 
-//mask input
-$('.phone').mask('+7 (999) 999-99-99');
+
+//i
+$('a .icon.icon-i').on('click', function(event) {
+  event.preventDefault();
+  if($(this).parent().parent().siblings('.details').hasClass('active')) {
+    $('.details').removeClass('active');
+  } else if($('.details').hasClass('active')) {
+    $('.details').removeClass('active');
+    $(this).parent().parent().siblings('.details').addClass('active');
+  } else {
+    $(this).parent().parent().siblings('.details').addClass('active');
+  }
+});
