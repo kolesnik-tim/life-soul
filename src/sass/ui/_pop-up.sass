@@ -1,5 +1,5 @@
 .blocker
-  z-index: 5
+  z-index: 11
 .modal a.close-modal
   background: none
   width: 24px
@@ -70,54 +70,6 @@
       margin-bottom: 10px
     &__select
       margin-top: 15px
-      .selectize-input
-        border-radius: 17.5px
-        background-color: $white
-        border: none
-        box-shadow: none
-        padding-bottom: 3px
-        transition: all 0.3s
-        padding: 10px 25px
-        width: 100%
-        &:after
-          transition: all 0.3s
-        &.input-active
-          box-shadow: none
-        input
-          display: none !important
-      .selectize-input.items.has-options.full.has-items
-        &:after
-          content: $icon-down-arrow
-          font-family: 'iconfont'
-          border: none
-          top: 37%
-          right: 25px
-          font-size: 13px
-          color: $steel
-          width: 16px
-          height: 15px
-        &.focus.input-active.dropdown-active:after
-          transform: rotate(180deg)
-      .selectize-dropdown
-        border-radius: 17.5px
-        overflow: hidden
-        border-top: none
-        top: 43px !important
-        padding-left: 25px
-        box-shadow: 0 5px 20px rgba(0,0,0,.1);
-        border: none
-      .selectize-input.dropdown-active::before
-        display: none
-      .selectize-input>*, .selectize-dropdown [data-selectable]
-        font-size: 12px
-        color: $steel
-        font-weight: 500
-        font-family: 'Montserrat'
-      .selectize-dropdown .active
-        background: $white
-        color: $black
-      .selectize-dropdown [data-selectable]
-        padding: 10px 0
     &__header
       background: $pale-grey
       border-radius: 5px
