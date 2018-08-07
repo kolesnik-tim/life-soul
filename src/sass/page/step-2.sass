@@ -15,10 +15,14 @@
     box-shadow: 0 20px 43px 0 rgba(230, 233, 240, 0.62)
     padding: 10px
     margin: 40px 0
+    +r(767)
+      margin: 20px 0
     &__content
       border-radius: 5px
       border: solid 1px #fad0dc
       +center
+      +r(767)
+        flex-direction: column
     &__block
       width: 100%
       +center
@@ -34,6 +38,10 @@
     padding-bottom: 85px
     flex: 1
     margin-right: 90px
+    +r(1024)
+      margin-right: 0
+    +r(767)
+      padding-bottom: 40px
     h2
       font-size: 14px
       color: $black
@@ -51,17 +59,23 @@
         width: calc(100% - 10px)
         margin-right: 10px
         margin-bottom: 20px
+        +r(767)
+          width: 100%
+          margin-right: 0
     &__select
       .selectize-input
         border-radius: 30px
         border: solid 1px $steel
-    &__img
-      img
-        position: relative
-        top: -8px
+        padding: 20px 30px
+      .selectize-input.items.has-options.full.has-items:after
+        top: 42%
+      .selectize-dropdown
+        top: 70px !important
     &__radio
       margin-bottom: 50px
       margin-top: 10px
+      +r(767)
+        margin-bottom: 20px
       input
         display: none
         & + label
@@ -73,6 +87,9 @@
           margin-right: 10px
           +center
           padding: 40px
+          +r(767)
+            margin-bottom: 20px
+            padding: 25px
           span
             font-size: 14px
             color: $black
@@ -117,6 +134,8 @@
       padding: 20px 50px
   &__content
     display: flex
+    +r(1024)
+      flex-direction: column-reverse
   &__info
     background-image: url('../img/step-2.png')
     background-size: 240px 100%
@@ -124,6 +143,11 @@
     height: auto
     padding: 30px 50px
     box-shadow: 0 20px 43px 0 rgba(230, 233, 240, 0.62)
+    +r(1024)
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      margin-bottom: 40px
     h2
       font-size: 14px
       font-weight: 500

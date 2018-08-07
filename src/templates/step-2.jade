@@ -19,21 +19,21 @@ block content
           .form__input
             h2 Введите контактные данные:
             .row
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 input(type="text" name="name" placeholder="Имя")
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 input(type="text" placeholder="Фамилия")
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 input(type="tel" name="phone" placeholder="Телефон")
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 input(type="email" name="e-mail" placeholder="E-mail")
-              .col-xs-9
+              .col-sm-9.col-xs-12
                 input(type="text" name="adres" placeholder="Адрес: Улица, дом / корпус")
-              .col-xs-3
+              .col-sm-3.col-xs-12
                 input(type="text" placeholder="Квартира")
             h2 Выберите желаемую дату 1-й доставки:
             .row
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 .form__select
                   select
                     option(value="1") 01. 07. 18
@@ -46,19 +46,19 @@ block content
           h2 Выберите способ оплаты: 
           .form__radio
             .row
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 input(type="radio" name="radio1" id="radio2" checked)
                 label(for="radio2")
                   .form__img
                     img(src="img/mastercard.svg", alt="")
                     img(src="img/visa.svg", alt="")
                   span Банковской картой на сайте (Visa, MasterCard)
-              .col-xs-6
+              .col-sm-6.col-xs-12
                 input(type="radio" name="radio1" id="radio3")
                 label(for="radio3")
                   .form__img
                     img(src="img/money.svg", alt="")
-                  span Наличными курьеру при получении
+                  span Наличными курьеру при получении
           .form__checkbox
             input(type="checkbox" name="checkbox" id="checkbox" checked)
             label(for="checkbox") Я прочитал и согласен 

@@ -9,11 +9,15 @@
       text-align: center
       margin-bottom: 25px
       text-transform: uppercase
+      +r(767)
+        font-size: 17px
     p
       font-size: 14px
       color: $black
       text-align: center
       line-height: 1.7
+      +r(767)
+        font-size: 13px
   &__block
     background-image: url('../img/step-3.png')
     background-size: 510px 100%
@@ -26,6 +30,17 @@
     transform: translate(-50%)
     margin-top: 45px
     margin-bottom: 105px
+    +r(550)
+      background: none
+      padding: 10px
+      border-radius: 5px
+      width: 100%
+      margin-top: 20px
+      margin-bottom: 45px
+      &__content
+        border-radius: 5px
+        border: solid 1px #fad0dc
+        padding: 20px
     h2
       font-size: 14px
       font-weight: 500
@@ -64,9 +79,15 @@
         max-width: 217px
         padding: 15px 0
         font-weight: 400
+        +r(550)
+          font-size: 12px
         &:last-child
           font-size: 20px
           font-weight: 500
+          +r(550)
+            font-size: 17px
+            width: 90px
+            text-align: right
       th
         color: $pale-rose
         font-weight: 500
@@ -78,3 +99,7 @@
       line-height: 1.8
     &__contacts
       padding-bottom: 20px
+      +r(767)
+        padding-bottom: 0
+        .row
+          margin-bottom: 15px

@@ -10,9 +10,10 @@ var swiper = new Swiper('.swiper-intro', {
     prevEl: '.swiper-intro-prev',
   },
   breakpoints: {
-    1024: {
+    767: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 20,
+      loop: true
     }
   }
 });

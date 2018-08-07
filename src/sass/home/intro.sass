@@ -1,5 +1,27 @@
 .intro
   position: relative
+  +r(767)
+    background: rgba(233, 235, 242, 0.6)
+    padding-bottom: 65px
+    overflow: hidden
+  h1
+    position: absolute
+    z-index: 9
+    top: 100px
+    font-size: 44px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 4.4px
+    color: $black
+    max-width: 560px
+    +r(767)
+      position: relative
+      padding-top: 65px
+      top: 0
+      font-size: 21px
+      letter-spacing: 2.1px
+      text-align: center
+      padding-bottom: 30px
   &__block
     background-image: url('../img/intro__mask.png')
     background-size: 290px 370px
@@ -11,10 +33,30 @@
     z-index: 9
     box-shadow: 0 20px 43px 0 rgba(230, 233, 240, 0.62)
     background-repeat: no-repeat
+    +r(767)
+      position: relative
+      bottom: 0
+      background: $white
+      border-radius: 5px
+      background-color: $white
+      box-shadow: 0 20px 43px 0 rgba(230, 233, 240, 0.62)
+      padding: 10px
+      height: auto
+      width: 100%
+    &__content
+      +r(767)
+        border-radius: 5px
+        border: solid 1px #fad0dc
+        height: 100%
+        padding: 25px 18px
+        padding-bottom: 40px
     &__info
       a.i
         top: 60px
         right: -3px
+        +r(767)
+          top: -8px
+          right: 15px
     &__details
       visibility: hidden
       opacity: 0
@@ -71,6 +113,8 @@
         left: 50%
         bottom: -10px
         transform: translate(-50%)
+        +r(767)
+          display: none
       &:before
         width: 133px
         background: $silver
@@ -96,7 +140,7 @@
           font-weight: 500
           color: $steel-grey
           background-repeat: no-repeat
-          width: 40%
+          width: 86px
           +center
           height: 50px
           padding-bottom: 5px
