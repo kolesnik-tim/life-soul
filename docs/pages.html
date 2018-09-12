@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Все страницы</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=320, minimum-scale=0.3, maximum-scale=3, user-scalable=no, target-densitydpi=device-dpi">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--BEGIN header-->
+      <header class="header">
+        <div class="container container-two">
+          <div class="row middle-xs">
+            <div class="col-xs-4 hidden-xs">
+              <div class="header__social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-vk"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-fb"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 center-xs">
+              <a href="index.html" class="header__logo">
+                <img src="img/Logo.svg" alt="">
+              </a>
+            </div>
+            <div class="col-xs-4 end-xs hidden-xs">
+              <div class="header__phone">
+                <a href="tel:88001330292">8 800 133 02 92</a>
+                <a href="#call-order" rel="modal:open" class="btn btn--primary">Обратная связь</a>
+              </div>
+            </div>
+          </div>
+          <a href="#call-order" rel="modal:open" class="menu-open hidden-sm hidden-md">
+            <span></span>
+          </a>
+        </div>
+      </header>
+      <!--END header-->
+      <div class="pages">
+        <ul>
+          <li>
+            <a href="index.html">Главная страница</a>
+          </li>
+          <li>
+            <a href="step-2.html">Шаг 2</a>
+          </li>
+          <li>
+            <a href="step-3.html">Шаг 3</a>
+          </li>
+        </ul>
+      </div>
+      <div id="step-1" class="step-1 modal">
+        <h2>Оформление заказа. Шаг 1.</h2>
+        <h3>Выберите тариф: </h3>
+        <div class="step-1__content">
+          <div class="step-1__block">
+            <div class="i">
+              <i class="icon icon-i"></i>
+            </div>
+            <div class="step-1__block__details details">
+              <p>Подарочные сертификаты - на Цветы по подписке номиналом 1 или 3 месяца</p>
+            </div>
+            <div class="step-1__block__header">
+              <h4>1 месяц</h4>
+              <div class="step-1__block__header__content">
+                <i class="icon icon-bouquet"></i>
+                <p>4 доставки букета до двери</p>
+              </div>
+            </div>
+            <div class="step-1__block__footer">
+              <p>Цена за месяц:</p>
+              <span>8 500₽</span>
+              <a href="step-2.html" class="btn btn--secondary">Выбрать</a>
+            </div>
+          </div>
+          <div class="step-1__block">
+            <div class="i">
+              <i class="icon icon-i"></i>
+            </div>
+            <div class="step-1__block__details details">
+              <p>Подарочные сертификаты - на Цветы по подписке номиналом 1 или 3 месяца</p>
+            </div>
+            <div class="step-1__block__header">
+              <h4>3 месяца</h4>
+              <div class="step-1__block__header__content">
+                <i class="icon icon-bouquet"></i>
+                <p>12 доставок букета до двери</p>
+              </div>
+            </div>
+            <div class="step-1__block__footer">
+              <p>Цена за 3 месяца:</p>
+              <span>24 000₽</span>
+              <b>Старая цена:
+                <s>25 500₽</s>
+              </b>
+              <a href="step-2.html" class="btn btn--secondary">Выбрать</a>
+            </div>
+          </div>
+          <div class="step-1__block step-1__block--present">
+            <div class="i">
+              <i class="icon icon-i"></i>
+            </div>
+            <div class="step-1__block__details details">
+              <p>Подарочные сертификаты - на Цветы по подписке номиналом 1 или 3 месяца</p>
+            </div>
+            <h4>Подарочный сертификат</h4>
+            <div class="step-1__block__header__content">
+              <i class="icon icon-present"></i>
+              <p>Выберите
+                <br>время действия:</p>
+            </div>
+            <div class="step-1__block__select">
+              <select>
+                <option value="1">1 месяц</option>
+                <option value="2">3 месяца</option>
+              </select>
+            </div>
+            <span>24 000₽</span>
+            <a href="step-2.html" class="btn btn--secondary">Выбрать</a>
+          </div>
+        </div>
+      </div>
+      <div id="call-order" class="call-order modal">
+        <div class="call-order__p">
+          <p>Спасибо, Ваши данные успешно отправлены!</p>
+        </div>
+        <div class="call-order__content">
+          <h2>Мы Вам перезвоним!</h2>
+          <p>Оставь свои контактные данные и мы свяжемся с Вами в ближайшее время:</p>
+          <form class="form">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="tel" name="phone" placeholder="Телефон">
+            <div class="form__checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox3">
+              <label for="checkbox3">Я прочитал и согласен
+                <a href="#">с условиями оформления и оплаты заказа </a>на сайте life4soul.ru</label>
+            </div>
+            <a href="#" class="dispatch btn btn--secondary">Перезвонить</a>
+          </form>
+          <div class="footer hidden-sm hidden-md">
+            <div class="footer__content">
+              <div class="row middle-xs">
+                <div class="col-sm-4 col-xs-6">
+                  <p>© 2018 life4soul_flowers</p>
+                </div>
+                <div class="col-sm-4 col-xs-6 end-xs">
+                  <a href="#" class="hidden-sm hidden-md">
+                    <img src="img/excv.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="video" class="video modal">
+        <iframe src="https://www.youtube.com/embed/XFCg9Ojvqu0?ecver=2" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <footer class="footer">
+        <div class="container container-two">
+          <div class="footer__content">
+            <div class="row middle-xs">
+              <div class="col-sm-4 col-xs-6">
+                <p>© 2018 life4soul_flowers</p>
+              </div>
+              <div class="col-sm-4 center-xs hidden-xs">
+                <a href="#">Политика конфиденциальности</a>
+              </div>
+              <div class="col-sm-4 col-xs-6 end-xs">
+                <a href="https://excv.ru/" class="hidden-xs">Разработанно в EXCV</a>
+                <a href="https://excv.ru/" class="hidden-sm hidden-md">
+                  <img src="img/excv.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_3w2x3Sv8bKV2MJdGkndMy2QC71Csriw&amp;libraries=places"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
