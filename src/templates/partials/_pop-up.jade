@@ -3,44 +3,75 @@
   h3 Выберите тариф: 
   .step-1__content
     .step-1__block
-      a(href="#").i
+      .i
         i.icon.icon-i
+      .step-1__block__details.details
+        p Подарочные сертификаты - на Цветы по подписке номиналом 1 или 3 месяца
       .step-1__block__header
         h4 1 месяц
         .step-1__block__header__content
-          img(src="img/bouquet.png", alt="")
+          i.icon.icon-bouquet
           p 4 доставки букета до двери
       .step-1__block__footer
         p Цена за месяц:
         span 8 500₽
-        a(href="#").btn.btn--secondary Выбрать
+        a(href="step-2.html").btn.btn--secondary Выбрать
     .step-1__block
-      a(href="#").i
+      .i
         i.icon.icon-i
+      .step-1__block__details.details
+        p Подарочные сертификаты - на Цветы по подписке номиналом 1 или 3 месяца
       .step-1__block__header
-        h4 1 месяц
+        h4 3 месяца
         .step-1__block__header__content
-          img(src="img/bouquet.png", alt="")
-          p 4 доставки букета до двери
+          i.icon.icon-bouquet
+          p 12 доставок букета до двери
       .step-1__block__footer
-        p Цена за месяц:
-        span 8 500₽
+        p Цена за 3 месяца:
+        span 24 000₽
         b
           | Старая цена: 
           s 25 500₽
-        a(href="#").btn.btn--secondary Выбрать
+        a(href="step-2.html").btn.btn--secondary Выбрать
     .step-1__block.step-1__block--present
-      a(href="#").i
+      .i
         i.icon.icon-i
+      .step-1__block__details.details
+        p Подарочные сертификаты - на Цветы по подписке номиналом 1 или 3 месяца
       h4 Подарочный сертификат
       .step-1__block__header__content
-        img(src="img/present.png", alt="")
+        i.icon.icon-present
         p Выберите <br>время действия:
       .step-1__block__select
         select
           option(value="1") 1 месяц
-          option(value="2") 2 месяца
-          option(value="3") 3 месяца
-      span 8 500₽
-      a(href="#").btn.btn--secondary Выбрать
-  
+          option(value="2") 3 месяца
+      span 24 000₽
+      a(href="step-2.html").btn.btn--secondary Выбрать
+.call-order.modal#call-order
+  .call-order__p
+    p Спасибо, Ваши данные успешно отправлены!
+  .call-order__content
+    h2 Мы Вам перезвоним!
+    p Оставь свои контактные данные и мы свяжемся с Вами в ближайшее время:
+    form.form
+      input(type="text" name="name" placeholder="Имя")
+      input(type="tel" name="phone" placeholder="Телефон")
+      .form__checkbox
+        input(type="checkbox" name="checkbox" id="checkbox3")
+        label(for="checkbox3") Я прочитал и согласен 
+          a(href="#") с условиями оформления и оплаты заказа 
+          | на сайте life4soul.ru
+      a(href="#").dispatch.btn.btn--secondary Перезвонить
+    .footer.hidden-sm.hidden-md
+      .footer__content
+        .row.middle-xs
+          .col-sm-4.col-xs-6
+            p © 2018 life4soul_flowers
+          .col-sm-4.col-xs-6.end-xs
+            a(href="#").hidden-sm.hidden-md
+              img(src="img/excv.png", alt="")
+
+
+.video.modal#video
+  iframe(src="https://www.youtube.com/embed/XFCg9Ojvqu0?ecver=2" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)

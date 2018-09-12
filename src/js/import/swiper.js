@@ -1,10 +1,12 @@
 import Swiper from 'swiper';
 
-
 //home-shares
-var swiper = new Swiper('.swiper-intro', {
+var mySwiper = new Swiper('.swiper-intro', {
   slidesPerView: 1,
   spaceBetween: 0,
+  observer: true,
+  observeParents: true,
+  loop: true,
   navigation: {
     nextEl: '.swiper-intro-next',
     prevEl: '.swiper-intro-prev',
@@ -15,5 +17,6 @@ var swiper = new Swiper('.swiper-intro', {
       spaceBetween: 20,
       loop: true
     }
-  }
+  },
+  
 });

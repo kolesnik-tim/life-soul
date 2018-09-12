@@ -1,0 +1,167 @@
+.step-1
+  max-width: 900px
+  padding: 50px 100px
+  +r(767)
+    padding: 0
+    padding-top: 40px
+  h2
+    font-size: 18px
+    letter-spacing: 1.8px
+    color: $black
+    font-weight: normal
+    margin-bottom: 20px
+    +r(767)
+      padding-left: 0
+      margin-bottom: 10px
+      text-transform: uppercase
+  h3
+    font-size: 14px
+    color: $black
+    font-weight: normal
+  &__content
+    padding: 45px 0
+    display: flex
+    +r(767)
+      flex-direction: column
+  &__block
+    max-width: 185px
+    width: 100%
+    position: relative
+    margin-right: 50px
+    border-radius: 5px
+    border: solid 1px #fad0dc
+    +r(767)
+      max-width: calc(100% - 10px)
+      margin-bottom: 65px
+    &:nth-child(2)
+      h4
+        +r(767)
+          padding-left: 47px
+    &--present
+      max-width: 240px
+      margin-right: 0
+      background: $very-light-purple
+      padding: 22px 35px
+      +r(767)
+        padding-bottom: 50px
+        h4
+          padding-left: 0 !important
+        i
+          top: 0 !important
+      img
+        +r(767)
+          top: 0 !important
+      .step-1__block__header__content
+        +r(767)
+          margin-top: 10px
+      span
+        font-size: 24px
+        color: $black
+        display: block
+        text-align: center
+        margin-top: 5px
+    .i
+      top: -15px
+      right: -15px
+    .details
+      position: absolute
+      top: 25px
+      right: -60px
+      width: 200px
+      // background: #fc98b4
+      background: #E9EBF2
+      +center
+      padding: 10px
+      border-radius: 3px
+      z-index: 2
+      opacity: 0
+      visibility: hidden
+      +tr
+      +r(767)
+        right: -30px
+      &:hover
+        opacity: 1
+        visibility: visible
+      &:before
+        content: ''
+        position: absolute
+        top: -7.5px
+        right: 50px
+        border-left: 8px solid transparent
+        border-bottom: 8px solid #E9EBF2
+        border-right: 8px solid transparent
+        display: block
+        +r(767)
+          right: 22px
+      p
+        font-size: 11px
+        font-weight: normal
+        font-style: italic
+        color: $gunmetal
+        margin-bottom: 10px
+        height: auto
+        border: none
+        text-align: left
+    h4
+      font-size: 20px
+      color: $black
+      text-transform: uppercase
+      text-align: center
+      font-weight: normal
+      margin-bottom: 10px
+      +r(767)
+        margin-bottom: 0
+        padding-left: 30px
+    &__select
+      margin-top: 15px
+    &__header
+      background: $pale-grey
+      border-radius: 5px
+      padding: 30px
+      +r(767)
+        padding: 30px 45px
+      &__content
+        +center
+        i
+          font-size: 50px
+          +r(767)
+            position: relative
+            top: -20px
+        p
+          font-size: 11px
+          color: $black
+          margin-left: 10px
+          +r(767)
+            margin-left: 15px
+    &__footer
+      padding-top: 20px
+      padding-bottom: 40px
+      p
+        font-size: 11px
+        color: $black
+        display: block
+        text-align: center
+      span
+        font-size: 24px
+        color: $black
+        display: block
+        text-align: center
+      b
+        color: $warm-pink
+        font-size: 9px
+        +center
+        align-items: flex-end
+        font-weight: 400
+        s
+          font-size: 14px
+          font-weight: 300
+          padding-left: 3px
+          line-height: 1
+    .btn
+      position: absolute
+      bottom: -30px
+      left: 50%
+      transform: translate(-50%)
+      font-size: 14px
+      font-weight: 500
+      padding: 20px 30px

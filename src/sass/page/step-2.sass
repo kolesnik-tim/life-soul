@@ -9,6 +9,10 @@
     color: $black
     padding-left: 20px
     text-transform: uppercase
+    +r(767)
+      padding-left: 0
+    span
+      display: block
   &__container
     border-radius: 5px
     background-color: $white
@@ -47,6 +51,9 @@
       color: $black
       padding: 10px 0 20px
       font-weight: normal
+      +r(767)
+        padding-left: 10px
+        padding-bottom: 30px
     &__input
       input
         font-size: 14px
@@ -59,23 +66,28 @@
         width: calc(100% - 10px)
         margin-right: 10px
         margin-bottom: 20px
+        +tr
+        &:focus
+          border: solid 1px $pale-rose
         +r(767)
           width: 100%
           margin-right: 0
-    &__select
-      .selectize-input
-        border-radius: 30px
-        border: solid 1px $steel
-        padding: 20px 30px
-      .selectize-input.items.has-options.full.has-items:after
-        top: 42%
-      .selectize-dropdown
-        top: 70px !important
+    &__datepicker
+      position: relative
+      label
+        position: absolute
+        top: 22px
+        right: 55px 
+        +r(767)
+          right: 40px
+        i
+          color: $steel
     &__radio
       margin-bottom: 50px
       margin-top: 10px
       +r(767)
         margin-bottom: 20px
+        margin-top: 0
       input
         display: none
         & + label
@@ -90,6 +102,8 @@
           +r(767)
             margin-bottom: 20px
             padding: 25px
+            margin-right: 0
+            width: 100%
           span
             font-size: 14px
             color: $black
@@ -107,6 +121,7 @@
           color: $cool-grey
           position: relative
           padding-left: 40px
+          display: block
           a
             text-decoration: underline
             color: $cool-grey
@@ -132,22 +147,32 @@
       font-size: 14px
       font-weight: 500
       padding: 20px 50px
+      +r(767)
+        padding: 20px 0
+        width: 100%
   &__content
     display: flex
     +r(1024)
       flex-direction: column-reverse
   &__info
-    background-image: url('../img/step-2.png')
-    background-size: 240px 100%
+    // background-image: url('../img/step-2.png')
+    // background-size: 240px 100%
     width: 240px
     height: auto
     padding: 30px 50px
-    box-shadow: 0 20px 43px 0 rgba(230, 233, 240, 0.62)
+    position: relative
+    // box-shadow: 0 20px 43px 0 rgba(230, 233, 240, 0.62)
     +r(1024)
       position: relative
       left: 50%
       transform: translate(-50%)
       margin-bottom: 40px
+    svg
+      position: absolute
+      top: calc(50% + 20px)
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: -1
     h2
       font-size: 14px
       font-weight: 500
@@ -193,3 +218,7 @@
         top: -10px
         left: 50%
         transform: translate(-50%)
+
+
+.datepicker--day-name
+  color: #fc98b4

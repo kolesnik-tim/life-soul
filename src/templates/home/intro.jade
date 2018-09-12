@@ -1,48 +1,61 @@
 section.intro
   .container
     h1 Авторские букеты для любимых
-  .swiper-container.swiper-intro.hidden-xs
-    .swiper-wrapper
-      .swiper-slide(style="background-image: url('img/intro__img-1.png')")
-      .swiper-slide(style="background-image: url('img/intro__img-1.png')")
+  .swiper
     .container
       .swiper-button-next.swiper-intro-next
         i.icon.icon-left-arrow
       .swiper-button-prev.swiper-intro-prev
         i.icon.icon-left-arrow
+    .swiper-container.swiper-intro.hidden-xs
+      .swiper-wrapper
+        .swiper-slide
+          .min-slide(style="background-image: url('img/1.jpg')")
+          .max-slide(style="background-image: url('img/2.jpg')")
+        .swiper-slide
+          .min-slide(style="background-image: url('img/2.jpg')")
+          .max-slide(style="background-image: url('img/1.jpg')")
   .container
     .intro__block
+      +inro-mask
       .intro__block__content
         .intro__block__info
-          a(href="#").i
+          .i
             i.icon.icon-i
-        .intro__block__details.details
-          p Букет MINI cостоит из 8-10 бутонов
-          p Букет MAXI cостоит из 15-20 бутонов
-        h2 Оформите абонемент
-        h3 на еженедельную доставку цветов 
-        .swiper-container.swiper-intro.hidden-sm.hidden-md
-          .swiper-wrapper
-            .swiper-slide
-              .slide__img
-                img(src="img/intro__mob__img-1.png", alt="")
-            .swiper-slide
-              .slide__img
-                img(src="img/intro__mob__img-1.png", alt="")
-              p maxi
-            .swiper-slide
-              .slide__img
-                img(src="img/intro__mob__img-1.png", alt="")
-            .swiper-slide
-              .slide__img
-                img(src="img/intro__mob__img-1.png", alt="")
+          .intro__block__details.details
+            p Букет MINI cостоит из 8-10 бутонов
+            p Букет MAXI cостоит из 15-20 бутонов
+          h2 Оформите абонемент
+          h3 на еженедельную доставку цветов 
+        .swiper.hidden-sm.hidden-md
+          .swiper-container.swiper-intro
+            .swiper-wrapper
+              .swiper-slide
+                .min-slide
+                  .slide__img
+                    img(src="img/intro__mob__img-1.png", alt="")
+                  p mini
+                .max-slide
+                  .slide__img
+                    img(src="img/intro__mob__img-1.png", alt="")
+                  p maxi
+              .swiper-slide
+                .min-slide
+                  .slide__img
+                    img(src="img/intro__mob__img-1.png", alt="")
+                  p mini
+                .max-slide
+                  .slide__img
+                    img(src="img/intro__mob__img-1.png", alt="")
+                  p maxi
         p Выберите размер букета:
         .intro__block__radio
-          input(type="radio" name="radio" id="radio")
-          label(for="radio") mini
-          input(type="radio" name="radio" id="radio1" checked)
-          label(for="radio1") maxi
+          input(type="radio" name="radio" id="radio" checked)
+          label(for="radio" data-sum="600" data-total="2400" data-slider=".swiper-intro" data-modal-mini="#step-1-mini" data-href-mini="").active.min mini
+          input(type="radio" name="radio" id="radio1")
+          label(for="radio1" data-sum="1200" data-total="4800" data-slider=".swiper-intro-max" data-modal-maxi="#step-1-maxi" data-href-maxi="").max maxi
         b за букет 
-        span 1200₽
-          b 4800₽/месяц
-        a(href="#").btn.btn--secondary Оформить абонемент
+        span.sum 1200₽
+        b.sum-month 4800₽/месяц
+        a(href="#step-1" rel="modal:open").btn.btn--secondary.hidden-xs Оформить абонемент
+        a(href="step-1.html").btn.btn--secondary.hidden-sm.hidden-md Оформить абонемент

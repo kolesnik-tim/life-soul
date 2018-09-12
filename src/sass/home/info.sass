@@ -13,6 +13,12 @@
     justify-content: flex-start
     text-align: left
     margin-bottom: 45px
+    font-size: 14px
+    font-weight: 500
+    color: $steel-grey
+    &:hover
+      i
+        color: #b5b9c5
     +r(767)
       justify-content: center
       margin-bottom: 35px
@@ -20,9 +26,7 @@
       font-size: 60px
       color: $steel-grey
       margin-right: 15px
-    font-size: 14px
-    font-weight: 500
-    color: $steel-grey
+      +tr
   h2
     font-size: 44px
     font-weight: 400
@@ -36,6 +40,7 @@
       text-align: center
       font-size: 21px
       margin-bottom: 25px
+      letter-spacing: 2.1px
   &__block
     border-radius: 5px
     background-color: $white
@@ -52,6 +57,17 @@
       +r(767)
         height: 100%
       &--secondary
+        .details
+          left: 54%
+          width: 315px
+          +r(767)
+            width: 240px
+            bottom: 0
+            top: auto
+        .info__block__details__text
+          padding-left: 16px
+          p
+            margin-bottom: 10px !important
         +r(767)
           p
             padding-bottom: 40px !important
@@ -67,40 +83,35 @@
         +r(767)
           font-size: 14px
           height: 100%
-          padding: 15px 11px
-      a.i
-        position: absolute
+          padding: 15px 10px
+          flex-direction: column
+          font-weight: 500
+          span
+            font-weight: 400
+      .i
         top: 55%
         transform: translate(0, -50%)
         right: -5px
-        box-shadow: 0 0 29px 0 rgba(133, 135, 142, 0.29)
-        border-radius: 100%
-        height: 29px
-        width: 29px
         +r(767)
           transform: none
           top: -7px
           right: 20px
-        i
-          color: $pale-rose
-          font-size: 30px
-          background: $white
-          border-radius: 100%
       .btn
-        position: absolute
-        left: 50%
-        transform: translate(-50%)
-        bottom: -23px
-        font-size: 14px
-        width: 89%
-        +center
-        padding: 20px 0
+        +r(767)
+          position: absolute
+          left: 50%
+          transform: translate(-50%)
+          bottom: -23px
+          font-size: 14px
+          width: 89%
+          +center
+          padding: 20px 0
     &__details
       position: absolute
-      bottom: -105px
-      left: 54%
+      top: 80px
+      left: 75%
       transform: translate(-50%)
-      width: 315px
+      width: 215px
       background: #E9EBF2
       +center
       padding: 10px
@@ -109,9 +120,10 @@
       opacity: 0
       visibility: hidden
       +tr
-      &.active
-        opacity: 1
-        visibility: visible
+      .btn
+        +r(767)
+          bottom: -25px
+          padding: 10px 20px
       &:before
         content: ''
         position: absolute
@@ -121,21 +133,30 @@
         border-bottom: 8px solid #E9EBF2
         border-right: 8px solid transparent
         display: block
+        +r(767)
+          right: 23px
       &__img
         height: 100px
         width: 100px
         border-radius: 3px
         overflow: hidden
+        +r(767)
+          height: 50px
+          width: 50px
         img
           +object-fit(cover)
           width: 100%
           height: 100%
       &__text
-        padding-left: 16px
         flex: 1
         p
           font-size: 11px
           font-weight: normal
           font-style: italic
           color: $gunmetal
-          margin-bottom: 10px
+          height: auto
+          border: none
+          text-align: left
+          +r(767)
+            font-size: 10px
+            padding-bottom: 0 !important
